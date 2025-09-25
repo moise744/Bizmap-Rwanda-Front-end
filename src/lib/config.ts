@@ -30,14 +30,14 @@ const environmentConfigs: Record<string, Partial<AppConfig>> = {
     googleStaticMapsKey: (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_GOOGLE_STATIC_MAPS_KEY) || undefined,
   },
   staging: {
-    apiBaseUrl: 'https://api-staging.busimap.rw',
+    apiBaseUrl: 'https://bizmap-rwanda.onrender.com',
     environment: 'staging',
     enableLogging: true,
     enableAnalytics: true,
     googleStaticMapsKey: (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_GOOGLE_STATIC_MAPS_KEY) || undefined,
   },
   production: {
-    apiBaseUrl: 'https://api.busimap.rw',
+    apiBaseUrl: 'https://bizmap-rwanda.onrender.com',
     environment: 'production',
     enableLogging: false,
     enableAnalytics: true,
